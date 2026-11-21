@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Dark / Light Theme Toggle
   const themeToggle = document.getElementById('themeToggle');
   const themeLabel = themeToggle ? themeToggle.querySelector('.theme-label') : null;
-  const savedTheme = localStorage.getItem('nm-theme');
+  const savedTheme = localStorage.getItem('st-theme');
 
   if (savedTheme === 'dark') {
     document.body.classList.add('dark');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark');
       const isDark = document.body.classList.contains('dark');
-      localStorage.setItem('nm-theme', isDark ? 'dark' : 'light');
+      localStorage.setItem('st-theme', isDark ? 'dark' : 'light');
       if (themeLabel) themeLabel.textContent = isDark ? 'Light' : 'Dark';
     });
   }
@@ -32,55 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Category Filter Tabs for Maps & Projects
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
-
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const category = btn.getAttribute('data-filter');
-      projectCards.forEach(card => {
-        const match = category === 'all' || card.getAttribute('data-category') === category;
-        card.classList.toggle('hidden', !match);
-      });
-    });
-  });
-
-  // 5. Full-Screen Map Lightbox
-  const lightbox = document.getElementById('mapLightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const lightboxCaption = document.getElementById('lightboxCaption');
-  const lightboxClose = document.getElementById('lightboxClose');
-
-  if (lightbox && lightboxImg && lightboxCaption) {
-    document.querySelectorAll('.project-img[data-lightbox-src]').forEach(frame => {
-      frame.addEventListener('click', () => {
-        lightboxImg.src = frame.getAttribute('data-lightbox-src');
-        lightboxCaption.textContent = frame.getAttribute('data-lightbox-caption') || '';
-        lightbox.classList.add('open');
-        lightbox.setAttribute('aria-hidden', 'false');
-      });
-    });
-
-    const closeLightbox = () => {
-      lightbox.classList.remove('open');
-      lightbox.setAttribute('aria-hidden', 'true');
-      lightboxImg.src = '';
-    };
-
-    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
-    });
-  }
-
-  // 6. Scroll Reveal Animation
+  // 4. Scroll Reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -90,10 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.08 });
-
   reveals.forEach(el => observer.observe(el));
 
-  // 7. Two-Step Service Request Modal & Email Submission
+  // 5. Two-Step Service Request Modal
   const serviceModal = document.getElementById('serviceModal');
   const closeServiceBtn = document.getElementById('closeServiceModal');
   const doneServiceBtn = document.getElementById('doneServiceBtn');
@@ -201,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Email: email,
             Phone: phone,
             Enquiry: message,
-            _subject: 'New Service Request: ' + service + ' — SpatialTech Zimbabwe',
+            _subject: 'SpatialTech Zimbabwe Enquiry: ' + service,
             _template: 'table'
           })
         });
@@ -215,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         step3View.style.display = 'block';
       } catch (err) {
         serviceErrorBox.innerHTML = 'Could not send automatically right now. Please <a href="mailto:madhinganettey@gmail.com?subject=' +
-          encodeURIComponent('Service Request: ' + service) + '&body=' +
+          encodeURIComponent('SpatialTech Service Request: ' + service) + '&body=' +
           encodeURIComponent('Service: ' + service + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nDetails:\n' + message) +
           '" style="color: inherit; text-decoration: underline;">click here to send via email</a> or message +263 77 678 9729 on WhatsApp.';
         serviceErrorBox.style.display = 'block';

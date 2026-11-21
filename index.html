@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nettey Madhinga — Geomatics, GIS & Surveying Engineering</title>
-  <meta name="description" content="Portfolio of Nettey Madhinga — B.Sc. (Hons) Geomatics and Surveying Engineering graduate, Founder of SpatialTech, specializing in GIS, remote sensing, cadastral mapping, and engineering surveys." />
+  <title>SpatialTech Zimbabwe — Geospatial Consulting, Surveying & GIS Training</title>
+  <meta name="description" content="SpatialTech Zimbabwe delivers GIS spatial analysis, cartography, cadastral & engineering surveying support, QGIS training cohorts, and custom portfolio websites." />
 
-  <!-- Executive Geometric & Technical Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=1" />
 </head>
 <body>
 
@@ -19,16 +18,18 @@
   <header class="site-header">
     <div class="container nav-inner">
       <a href="#" class="brand-mark">
-        <span class="brand-badge">NM</span>
-        <span class="brand-name">Nettey Madhinga</span>
+        <span class="brand-badge">ST</span>
+        <span class="brand-text">
+          <strong>SpatialTech</strong>
+          <small class="mono">ZIMBABWE</small>
+        </span>
       </a>
 
       <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#academy">QGIS Academy</a>
+        <a href="#web-studio">Web Studio</a>
         <a href="#about">About</a>
-        <a href="#skills">Expertise</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#writing">Publications</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -43,435 +44,244 @@
   </header>
 
   <main>
-    <!-- SPLIT-SCREEN HERO -->
+    <!-- HERO SECTION -->
     <section class="hero">
       <div class="hero-grid-pattern" aria-hidden="true"></div>
       <div class="container">
-        <div class="hero-split">
-          <div class="hero-content">
-            <div class="status-pill">
-              <span class="status-dot"></span>
-              <span>Harare, Zimbabwe · Geomatics & GIS Specialist</span>
-            </div>
-
-            <h1>Nettey Madhinga</h1>
-            <p class="hero-subtitle">Geomatics & Surveying Engineering | GIS, Remote Sensing & Cartography</p>
-            <p class="hero-lead">
-              Transforming field observations, satellite imagery, and spatial datasets into accurate land, infrastructure, and environmental intelligence.
-            </p>
-
-            <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary">Explore Maps & Projects →</a>
-              <a href="assets/cv.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download CV (PDF)</a>
-              <a href="#contact" class="btn btn-ghost">Contact Me</a>
-            </div>
+        <div class="hero-box">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Harare, Zimbabwe · Geospatial & Digital Solutions</span>
           </div>
 
-          <div class="hero-visual">
-            <div class="hero-portrait-card">
-              <div class="hero-portrait">
-                <img src="assets/img/profile.jpg" alt="Portrait of Nettey Madhinga" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-                <div class="portrait-placeholder mono" style="display: none;">
-                  <span>Add assets/img/profile.jpg</span>
-                </div>
-              </div>
-              <div class="portrait-caption">
-                <div>
-                  <strong>B.Sc. (Hons) Geomatics & Surveying</strong>
-                  <span>Founder, SpatialTech Zimbabwe</span>
-                </div>
-                <span class="coord-chip mono">17°49'S 31°03'E</span>
-              </div>
-            </div>
+          <h1>Precision Spatial Intelligence, Surveying & GIS Training</h1>
+          <p class="hero-lead">
+            SpatialTech Zimbabwe helps organizations, engineers, researchers, and emerging professionals turn raw field measurements and satellite data into clear maps, reliable survey deliverables, and practical geospatial skills.
+          </p>
+
+          <div class="hero-cta">
+            <button type="button" class="btn btn-primary" data-open-service>Request a Service →</button>
+            <a href="#services" class="btn btn-outline">Explore What We Do</a>
+            <a href="https://nmadhinga49.github.io/#projects" target="_blank" rel="noopener" class="btn btn-ghost">View Sample Maps ↗</a>
           </div>
         </div>
 
-        <div class="metrics-bar">
-          <div class="metric">
-            <b>Oct 2025</b>
-            <span>B.Sc. (Hons) Geomatics & Surveying</span>
+        <div class="pillars-bar">
+          <div class="pillar">
+            <span class="mono">01 / GIS</span>
+            <b>Spatial Analysis & Maps</b>
+            <span>DEM terrain modeling, hydrology & thematic cartography</span>
           </div>
-          <div class="metric">
-            <b>ZIMDEF Prize</b>
-            <span>2nd Best Female Graduating Student</span>
+          <div class="pillar">
+            <span class="mono">02 / SURVEY</span>
+            <b>Cadastral & Engineering</b>
+            <span>Boundary plans, setting-out, GNSS & Civil 3D workflows</span>
           </div>
-          <div class="metric">
-            <b>98% Accuracy</b>
-            <span>As-built & cadastral verification</span>
+          <div class="pillar">
+            <span class="mono">03 / TRAINING</span>
+            <b>SpatialTech Academy</b>
+            <span>Structured QGIS cohorts, 1-on-1 tutoring & YouTube lessons</span>
           </div>
-          <div class="metric">
-            <b>SpatialTech</b>
-            <span>Founder & Lead GIS Tutor</span>
+          <div class="pillar">
+            <span class="mono">04 / DIGITAL</span>
+            <b>Portfolio Web Studio</b>
+            <span>Custom career websites built & launched in 3–5 days</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT & PHILOSOPHY -->
+    <!-- CORE SERVICES -->
+    <section id="services" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Services</span>
+          <h2>End-to-end geospatial, surveying & digital solutions</h2>
+          <p class="section-intro">Select any service below to tell us about your project requirements and receive a tailored response within 24 hours.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-code mono">GIS & CARTOGRAPHY</span>
+              <h3>GIS Spatial Analysis & Cartography</h3>
+              <p>Publication-ready maps and spatial models engineered with metric precision in QGIS and ArcGIS using local and global coordinate systems (EPSG:32736, Lo 29°/31°).</p>
+            </div>
+            <ul class="service-list">
+              <li>Hypsometric terrain, slope suitability & watershed modeling</li>
+              <li>Agro-ecological, soils, land-use & thematic mapping</li>
+              <li>Georeferencing, vector digitization & topology validation</li>
+              <li>Python geospatial scripting & workflow automation</li>
+            </ul>
+            <button type="button" class="card-cta" data-open-service="GIS Spatial Analysis & Cartography">Request GIS & Mapping →</button>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-code mono">FIELD & CAD</span>
+              <h3>Cadastral & Engineering Surveying</h3>
+              <p>Technical surveying support and CAD drafting bridging field observations with accurate engineering and land administration deliverables.</p>
+            </div>
+            <ul class="service-list">
+              <li>Boundary & subdivision survey drafting support</li>
+              <li>Road, bridge & infrastructure setting-out assistance</li>
+              <li>GNSS/GPS & Total Station data processing and QA/QC</li>
+              <li>AutoCAD Civil 3D contour & earthwork volume profiles</li>
+            </ul>
+            <button type="button" class="card-cta" data-open-service="Cadastral & Engineering Surveying">Request Survey Support →</button>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-code mono">EDUCATION & COHORTS</span>
+              <h3>QGIS Tutoring & Geospatial Training</h3>
+              <p>Hands-on, beginner-friendly training designed to take students, researchers, and working professionals from zero to confident spatial mapping.</p>
+            </div>
+            <ul class="service-list">
+              <li>Structured <em>QGIS for Beginners</em> cohort programs</li>
+              <li>1-on-1 personalized coaching for thesis or work projects</li>
+              <li>Practical modules on CRS, digitization & print layouts</li>
+              <li>Graded practical assignments & course transcripts</li>
+            </ul>
+            <button type="button" class="card-cta" data-open-service="QGIS Tutoring & Geospatial Training">Enquire About Training →</button>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-code mono">WEB STUDIO</span>
+              <h3>Custom Portfolio Websites</h3>
+              <p>Clean, mobile-responsive personal portfolio websites built for engineers, graduates, creatives, and consultants who want to stand out online.</p>
+            </div>
+            <ul class="service-list">
+              <li>Tailored layout showcasing your CV, projects & credentials</li>
+              <li>Interactive light/dark modes & direct enquiry forms</li>
+              <li>Hosted fast with zero recurring monthly hosting fees</li>
+              <li>Designed, tested & launched in 3–5 business days</li>
+            </ul>
+            <button type="button" class="card-cta" data-open-service="Custom Portfolio Website">Request a Portfolio →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPATIALTECH ACADEMY -->
+    <section id="academy" class="section section-alt reveal">
+      <div class="container">
+        <div class="academy-split">
+          <div>
+            <span class="section-tag">SpatialTech Academy</span>
+            <h2>Learn practical GIS through structured cohorts & open tutorials</h2>
+            <p class="section-intro" style="margin-bottom: 24px;">
+              We believe geospatial skills should be practical, accessible, and grounded in real datasets. Whether you join a live <strong>QGIS for Beginners</strong> cohort or follow our step-by-step video lessons on YouTube, you learn by building real maps from day one.
+            </p>
+
+            <div class="academy-actions">
+              <button type="button" class="btn btn-primary" data-open-service="QGIS Tutoring & Geospatial Training">Join Next QGIS Cohort →</button>
+              <a href="https://www.youtube.com/@SpatialTech_ZW" target="_blank" rel="noopener" class="btn btn-outline">Watch @SpatialTech_ZW ↗</a>
+            </div>
+          </div>
+
+          <div class="curriculum-card">
+            <div class="curriculum-header mono">QGIS FOR BEGINNERS · CORE SYLLABUS</div>
+            <div class="module-row">
+              <span class="mono">Module 01</span>
+              <div>
+                <b>Interface, Data Formats & Coordinate Systems</b>
+                <span>Vector vs. raster data, GeoPackages, UTM & Gauss Conform CRS</span>
+              </div>
+            </div>
+            <div class="module-row">
+              <span class="mono">Module 02</span>
+              <div>
+                <b>Georeferencing & Vector Digitization</b>
+                <span>Aligning scanned maps, attribute tables & clean geometry</span>
+              </div>
+            </div>
+            <div class="module-row">
+              <span class="mono">Module 03</span>
+              <div>
+                <b>Symbology, Spatial Queries & Terrain Basics</b>
+                <span>Categorized styling, buffers, clipping & DEM visualization</span>
+              </div>
+            </div>
+            <div class="module-row">
+              <span class="mono">Module 04</span>
+              <div>
+                <b>Professional Print Layout Cartography</b>
+                <span>Coordinate grids, scale bars, dynamic legends & PDF/PNG export</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SPATIALTECH & FOUNDER -->
     <section id="about" class="section reveal">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">About Me</span>
-          <h2>Bridging field survey precision with modern spatial intelligence</h2>
-        </div>
-
-        <blockquote class="featured-quote">
-          <p>“The future worth building is one where AI and geographic understanding strengthen human judgement, not replace it.”</p>
-          <cite class="mono">— Jack Dangermond</cite>
-        </blockquote>
-
         <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I am a <strong>Geomatics and Surveying Engineering</strong> Honours graduate from Gwanda State University (Oct 2025) with hands-on experience across <strong>cadastral surveying</strong>, <strong>civil engineering setting-out</strong>, and <strong>geospatial data analysis</strong>.
-            </p>
-            <p>
-              My background spans the complete field-to-finish workflow—from boundary subdivisions, Survey Diagrams, and General Plans to robotic Total Station operations, GNSS control networks, and custom coordinate reference systems in QGIS and AutoCAD Civil 3D.
-            </p>
-            <p>
-              Alongside technical consulting, I founded <strong>SpatialTech</strong> to deliver accessible online GIS tutoring and practical training programs, equipping students and professionals with open-source mapping skills, <strong>Python</strong> geospatial automation, and development workflows in <strong>VS Code</strong>.
-            </p>
-          </div>
-
-          <aside class="about-sidebar">
-            <div class="spec-card">
-              <div class="spec-card-title">Technical Profile</div>
-              <div class="spec-row"><span>GIS & Web Mapping</span><b>QGIS, ArcGIS, Google Earth Pro</b></div>
-              <div class="spec-row"><span>CAD & Mining</span><b>AutoCAD, Civil 3D, Surpac SA</b></div>
-              <div class="spec-row"><span>Field Instruments</span><b>GNSS/GPS, Robotic Total Station</b></div>
-              <div class="spec-row"><span>Remote Sensing</span><b>Satellite Imagery, UAV/Drone</b></div>
-              <div class="spec-row"><span>Code & Automation</span><b>Python, VS Code</b></div>
-              <div class="spec-row"><span>Location</span><b>Harare, Zimbabwe</b></div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECHNICAL EXPERTISE -->
-    <section id="skills" class="section section-alt reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Technical Expertise</span>
-          <h2>Core skills & software stack</h2>
-          <p class="section-intro">Applied competencies across cadastral & engineering surveying, spatial analysis, and cartographic production.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-item">
-            <div class="skill-head"><b>GIS Platforms (QGIS, ArcGIS) & Spatial Statistics</b><span class="mono">92%</span></div>
-            <div class="skill-bar"><i style="width: 92%"></i></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><b>Engineering Surveys & Infrastructure Setting-Out</b><span class="mono">90%</span></div>
-            <div class="skill-bar"><i style="width: 90%"></i></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><b>AutoCAD Civil 3D & BIM Integration</b><span class="mono">88%</span></div>
-            <div class="skill-bar"><i style="width: 88%"></i></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><b>GNSS/GPS & Geodetic Control Networks</b><span class="mono">88%</span></div>
-            <div class="skill-bar"><i style="width: 88%"></i></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><b>Remote Sensing & UAV/Drone Photogrammetry</b><span class="mono">82%</span></div>
-            <div class="skill-bar"><i style="width: 82%"></i></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><b>Python Scripting & VS Code Development</b><span class="mono">80%</span></div>
-            <div class="skill-bar"><i style="width: 80%"></i></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE, EDUCATION & HONORS -->
-    <section id="experience" class="section reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Career & Academics</span>
-          <h2>Experience, education & honors</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date mono">2026 — Present</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-meta mono">Harare, ZW · Remote & Consulting</span>
-              <h4>Founder & Lead GIS Tutor</h4>
-              <p class="timeline-org">SpatialTech (SpatialTech_ZW)</p>
-              <ul>
-                <li>Founded SpatialTech to deliver accessible online GIS tutoring and practical geospatial training programs, including the <em>QGIS for Beginners</em> cohort.</li>
-                <li>Design and teach structured modules covering coordinate reference systems, georeferencing, vector digitization, and print cartographic layouts.</li>
-                <li>Produce step-by-step video lessons, annotated course transcripts, and hands-on spatial exercises for students and early-career professionals.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date mono">Sep 2023 — Jul 2024</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-meta mono">Harare, ZW · Cadastral Surveying</span>
-              <h4>Land Surveying Intern</h4>
-              <p class="timeline-org">Mtariswa Land Surveyors</p>
-              <ul>
-                <li>Supported delivery of boundary and subdivision surveys and assisted production of Survey Diagrams and General Plans for Surveyor General submission.</li>
-                <li>Built a custom Coordinate Reference System (CRS) in QGIS for local datasets and digitized survey records across QGIS and ArcGIS.</li>
-                <li>Reduced contour production time by automating routine AutoCAD Civil 3D tasks and scripting repetitive digitization workflows.</li>
-                <li>Coached 3 junior interns on AutoCAD Civil 3D techniques to strengthen team output.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date mono">Jun 2023 — Sep 2023</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-meta mono">Harare, ZW · Engineering Surveying</span>
-              <h4>Engineering Surveying Intern</h4>
-              <p class="timeline-org">Tensor Systems Pvt Ltd</p>
-              <ul>
-                <li>Improved as-built drawing accuracy to 98% by verifying field dimensions against engineering designs and refining field-to-office data transfer protocols.</li>
-                <li>Conducted setting-out surveys for a 120 m bridge structure and 15 km of road rehabilitation works.</li>
-                <li>Processed GNSS and Total Station field observations for earthwork volume profiles and trained 5 staff on Total Station operation.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="edu-block">
-          <h3>Education & Honors</h3>
-          <div class="edu-grid">
-            <div class="edu-card">
-              <span class="edu-year mono">Oct 2025</span>
-              <b>B.Sc. Honors Degree in Geomatics and Surveying</b>
-              <span>Gwanda State University, Zimbabwe</span>
-            </div>
-            <div class="edu-card">
-              <span class="edu-year mono">Oct 2025</span>
-              <b>ZIMDEF Prize — Second-Best Female Graduating Student</b>
-              <span>Gwanda State University</span>
-            </div>
-            <div class="edu-card">
-              <span class="edu-year mono">May 2023</span>
-              <b>1st Runner Up — Best Youth Leader of the Year</b>
-              <span>International Coaching & Mentoring Foundation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SELECTED MAPS & CASE STUDIES -->
-    <section id="projects" class="section section-alt reveal">
-      <div class="container">
-        <div class="projects-header-row">
-          <div class="section-header" style="margin-bottom: 0;">
-            <span class="section-tag">Cartography & Spatial Analysis</span>
-            <h2>Featured maps & case studies</h2>
-          </div>
-
-          <div class="filter-bar" role="group" aria-label="Filter projects by category">
-            <button class="filter-btn active" data-filter="all">All (5)</button>
-            <button class="filter-btn" data-filter="terrain">Terrain & Hydrology</button>
-            <button class="filter-btn" data-filter="land">Land & Soils</button>
-            <button class="filter-btn" data-filter="thematic">Thematic</button>
-          </div>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Featured Project 1: Gutu District -->
-          <article class="project-card project-featured" data-category="terrain">
-            <div class="project-img" data-lightbox-src="assets/maps/gutu-hypsometric.png" data-lightbox-caption="Gutu District Hypsometric Terrain & Elevation Profile Analysis (EPSG:32736)">
-              <img src="assets/maps/gutu-hypsometric.png" alt="Gutu District Hypsometric Representation and Elevation Profiles" />
-              <span class="zoom-badge mono">Click to inspect</span>
-            </div>
-            <div class="project-body">
-              <span class="project-coords mono">EPSG:32736 · Gutu District, Zimbabwe</span>
-              <h3>Gutu District Hypsometric Terrain & Elevation Profile Analysis</h3>
-              <p>
-                Continuous hypsometric elevation model (733 m – 1,563 m) projected in WGS 84 / UTM Zone 36S, paired with three cross-sectional terrain profiles (A1–A2, B1–B2, C1–C2) and hydrological drainage overlays derived from USGS EarthExplorer DEM and Zimbabwe GeoPortal datasets.
-              </p>
-              <div class="project-stats">
-                <div><b>733–1,563 m</b><span>Elevation Range</span></div>
-                <div><b>3 Transects</b><span>Terrain Profiles</span></div>
-              </div>
-              <a href="projects/gutu-hypsometric.html" class="project-link">Read full case study →</a>
-            </div>
-          </article>
-
-          <!-- Project 2: Hurungwe District -->
-          <article class="project-card" data-category="land">
-            <div class="project-img" data-lightbox-src="assets/maps/hurungwe-slope.png" data-lightbox-caption="Hurungwe District Slope Suitability Analysis (Lo 29° & EPSG:32736)">
-              <img src="assets/maps/hurungwe-slope.png" alt="Hurungwe District Slope Suitability Analysis Map" />
-              <span class="zoom-badge mono">Click to inspect</span>
-            </div>
-            <div class="project-body">
-              <span class="project-coords mono">Lo 29° & EPSG:32736 · Hurungwe District, ZW</span>
-              <h3>Hurungwe District Slope Suitability Analysis</h3>
-              <p>
-                Terrain slope classification from SRTM DEM data categorizing land into Highly Suitable (0–10%), Moderate requiring earthworks (10–20%), and Unstable steep terrain (>20%) along the Zambezi and Sanyati basins with Lo 29° meridian zone framing.
-              </p>
-              <div class="project-stats">
-                <div><b>3 Classes</b><span>Slope Suitability</span></div>
-                <div><b>SRTM DEM</b><span>Elevation Source</span></div>
-              </div>
-              <a href="projects/hurungwe-slope.html" class="project-link">Read full case study →</a>
-            </div>
-          </article>
-
-          <!-- Project 3: Zaka District -->
-          <article class="project-card" data-category="land">
-            <div class="project-img" data-lightbox-src="assets/maps/zaka-soils.png" data-lightbox-caption="Zaka District Soils & Agro-Ecological Regions (EPSG:32736)">
-              <img src="assets/maps/zaka-soils.png" alt="Zaka District Soils and Agro-Ecological Regions Map" />
-              <span class="zoom-badge mono">Click to inspect</span>
-            </div>
-            <div class="project-body">
-              <span class="project-coords mono">EPSG:32736 · Zaka District, Zimbabwe</span>
-              <h3>Zaka District Soils & Agro-Ecological Regions</h3>
-              <p>
-                Multi-layer agricultural cartography integrating FAO soil classifications (Rhodic Ferralsols, Chromic & Ferric Luvisols, Eutric Nitosols) with Zimbabwe's Agro-Ecological Regions (IIb, III, IV, Va) and ward boundaries to support land-use planning.
-              </p>
-              <div class="project-stats">
-                <div><b>4 Soil Orders</b><span>FAO Classification</span></div>
-                <div><b>Regions IIb–Va</b><span>Agro-Ecological Zones</span></div>
-              </div>
-              <a href="projects/zaka-soils.html" class="project-link">Read full case study →</a>
-            </div>
-          </article>
-
-          <!-- Project 4: Zimbabwean Rivers -->
-          <article class="project-card" data-category="terrain">
-            <div class="project-img" data-lightbox-src="assets/maps/zimbabwe-rivers.png" data-lightbox-caption="Zimbabwean Rivers & Drainage Basin Visualization">
-              <img src="assets/maps/zimbabwe-rivers.png" alt="Zimbabwean Rivers Hydrological Network Map" />
-              <span class="zoom-badge mono">Click to inspect</span>
-            </div>
-            <div class="project-body">
-              <span class="project-coords mono">National Hydrology · Zimbabwe</span>
-              <h3>Zimbabwean Rivers & Drainage Basin Visualization</h3>
-              <p>
-                High-contrast dark cartographic visualization mapping national river networks and hierarchical stream orders across Zimbabwe's major catchments.
-              </p>
-              <div class="project-stats">
-                <div><b>National Scale</b><span>Catchment Network</span></div>
-                <div><b>Stream Order</b><span>Hydrological Styling</span></div>
-              </div>
-              <a href="projects/zimbabwe-rivers.html" class="project-link">Read full case study →</a>
-            </div>
-          </article>
-
-          <!-- Project 5: Cabo Verde Thematic Map -->
-          <article class="project-card" data-category="thematic">
-            <div class="project-img" data-lightbox-src="assets/maps/cabo-verde.png" data-lightbox-caption="Cabo Verde — 2026 FIFA World Cup Thematic Cartography">
-              <img src="assets/maps/cabo-verde.png" alt="Cabo Verde 2026 FIFA World Cup Thematic Map" />
-              <span class="zoom-badge mono">Click to inspect</span>
-            </div>
-            <div class="project-body">
-              <span class="project-coords mono">16°00'N 24°00'W · Cabo Verde & Africa</span>
-              <h3>Cabo Verde — 2026 FIFA World Cup Thematic Cartography</h3>
-              <p>
-                Multi-frame thematic map combining an African continental flag-fill choropleth, a detailed archipelago inset of the Barlavento and Sotavento islands, and Group H / Round of 32 match statistics.
-              </p>
-              <div class="project-stats">
-                <div><b>2-Frame Inset</b><span>Continental & Island</span></div>
-                <div><b>Thematic</b><span>Custom Symbology</span></div>
-              </div>
-              <a href="projects/cabo-verde.html" class="project-link">Read full case study →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS & TUTORIALS -->
-    <section id="writing" class="section reveal">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Knowledge Sharing</span>
-          <h2>Publications & video tutorials</h2>
-        </div>
-
-        <div class="writing-list">
-          <div class="writing-item">
-            <span class="pub-badge mono">YouTube</span>
-            <div>
-              <h4>SpatialTech_ZW — QGIS & Geospatial Video Tutorials</h4>
-              <p>Step-by-step video lessons covering QGIS for Beginners, coordinate transformations, georeferencing, and cartographic layout design.</p>
-            </div>
-            <a href="https://www.youtube.com/@SpatialTech_ZW" target="_blank" rel="noopener">Watch →</a>
-          </div>
-
-          <div class="writing-item">
-            <span class="pub-badge mono">Sep 2023</span>
-            <div>
-              <h4>Mapping for the future — YouthMappers: Unleashing Zimbabwe's Potential (Issue 01)</h4>
-              <p>Edited publication spotlighting youth-led open mapping, geospatial innovation, and community resilience across Zimbabwe.</p>
-            </div>
-            <a href="https://africansurveyors.net/youth-mappers-zimbabwe/" target="_blank" rel="noopener">Read →</a>
-          </div>
-
-          <div class="writing-item">
-            <span class="pub-badge mono">May 2023</span>
-            <div>
-              <h4>Emerging technologies and the future — The Spatial Times (Issue 07)</h4>
-              <p>Edited issue exploring modern surveying technologies, GNSS/UAV workflows, and the evolving role of geomatics engineers.</p>
-            </div>
-            <a href="https://africansurveyors.net/the-spatial-times/issue-07/" target="_blank" rel="noopener">Read →</a>
-          </div>
-        </div>
-
-        <!-- SPATIALTECH PORTFOLIO SERVICE CALLOUT -->
-        <div class="studio-banner">
           <div>
-            <span class="studio-eyebrow mono">SpatialTech Zimbabwe · Web Portfolio Service</span>
-            <h3>Want a custom portfolio website like this for your career?</h3>
-            <p>We build clean, mobile-friendly personal websites for engineers, creatives, developers, graduates, and professionals across all industries—one-time design fee with zero monthly subscriptions.</p>
+            <span class="section-tag">About SpatialTech Zimbabwe</span>
+            <h2>Built on engineering precision and accessible spatial education</h2>
+            <p>
+              Founded in Harare by <strong>Nettey Madhinga</strong>—a B.Sc. (Hons) Geomatics and Surveying Engineering graduate from Gwanda State University and ZIMDEF prize recipient—<strong>SpatialTech Zimbabwe</strong> bridges classical land surveying rigor with modern open-source GIS and digital tools.
+            </p>
+            <p>
+              From assisting local infrastructure and cadastral workflows to mentoring the next generation of GIS practitioners across Zimbabwe and beyond, our focus is simple: deliver clear, accurate, and dependable work every single time.
+            </p>
+            <div style="margin-top: 22px;">
+              <a href="https://nmadhinga49.github.io/" target="_blank" rel="noopener" class="text-link">Explore Founder's Technical Portfolio & Map Case Studies →</a>
+            </div>
           </div>
-          <button type="button" class="btn btn-primary" data-open-service="Custom Portfolio Website">Request a Portfolio →</button>
+
+          <aside class="spec-card" id="web-studio">
+            <div class="spec-card-title">Quick Facts</div>
+            <div class="spec-row"><span>Headquarters</span><b>Harare, Zimbabwe</b></div>
+            <div class="spec-row"><span>Core Stack</span><b>QGIS, ArcGIS, AutoCAD Civil 3D</b></div>
+            <div class="spec-row"><span>Automation & Web</span><b>Python, VS Code, HTML/CSS/JS</b></div>
+            <div class="spec-row"><span>Training Channel</span><b>youtube.com/@SpatialTech_ZW</b></div>
+            <div class="spec-row"><span>Turnaround</span><b>24h Enquiry Response</b></div>
+          </aside>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- CONTACT FOOTER -->
+  <!-- FOOTER -->
   <footer id="contact" class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <span class="section-tag" style="color: #2dd4bf;">Get In Touch</span>
-          <h2>Have a survey, GIS, or web portfolio project in mind?</h2>
-          <p class="footer-note">Available for cadastral & engineering survey consulting, spatial analysis, online QGIS tutoring, and custom portfolio websites.</p>
+          <span class="section-tag" style="color: #2dd4bf;">Work With Us</span>
+          <h2>Ready to start a mapping, survey, training, or web project?</h2>
+          <p class="footer-note">Use our quick online service selector or reach out directly via email, WhatsApp, or YouTube.</p>
+          <div style="margin-top: 24px;">
+            <button type="button" class="btn btn-primary" data-open-service>Request a Service →</button>
+          </div>
         </div>
 
         <div class="contact-links">
-          <div class="mono contact-label">Direct Channels</div>
+          <div class="mono contact-label">Contact SpatialTech Zimbabwe</div>
           <a href="mailto:madhinganettey@gmail.com"><span>Email</span><span class="mono">madhinganettey@gmail.com</span></a>
           <a href="tel:+263776789729"><span>Phone / WhatsApp</span><span class="mono">+263 77 678 9729</span></a>
-          <a href="https://www.linkedin.com/in/nettey-madhinga-beng-79b748391/" target="_blank" rel="noopener"><span>LinkedIn</span><span class="mono">/in/nettey-madhinga-beng</span></a>
-          <a href="https://github.com/NMadhinga49" target="_blank" rel="noopener"><span>GitHub</span><span class="mono">@NMadhinga49</span></a>
           <a href="https://www.youtube.com/@SpatialTech_ZW" target="_blank" rel="noopener"><span>YouTube</span><span class="mono">@SpatialTech_ZW</span></a>
+          <a href="https://www.linkedin.com/in/nettey-madhinga-beng-79b748391/" target="_blank" rel="noopener"><span>LinkedIn</span><span class="mono">Nettey Madhinga</span></a>
+          <a href="https://nmadhinga49.github.io/" target="_blank" rel="noopener"><span>Map Portfolio</span><span class="mono">nmadhinga49.github.io</span></a>
         </div>
       </div>
 
       <div class="footer-bottom mono">
-        <span>© <span id="year"></span> Nettey Madhinga. All rights reserved.</span>
+        <span>© <span id="year"></span> SpatialTech Zimbabwe. All rights reserved.</span>
         <span>Harare, Zimbabwe — 17°49'S 31°03'E</span>
       </div>
     </div>
   </footer>
 
-  <!-- FULL-SCREEN MAP LIGHTBOX -->
-  <div id="mapLightbox" class="lightbox" aria-hidden="true" role="dialog">
-    <button id="lightboxClose" class="lightbox-close" aria-label="Close full-screen preview">×</button>
-    <div class="lightbox-inner">
-      <img id="lightboxImg" src="" alt="" />
-      <p id="lightboxCaption" class="mono"></p>
-    </div>
-  </div>
-        <!-- INTERACTIVE SERVICE REQUEST MODAL -->
+  <!-- TWO-STEP SERVICE REQUEST MODAL -->
   <div id="serviceModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
     <div class="modal-card">
       <button type="button" id="closeServiceModal" class="modal-close" aria-label="Close service request">×</button>
@@ -525,7 +335,7 @@
         </div>
       </div>
 
-      <!-- STEP 2: ENTER CONTACT & PROJECT DETAILS -->
+      <!-- STEP 2: ENTER DETAILS -->
       <div id="serviceStep2" style="display: none;">
         <button type="button" id="backToServicesBtn" class="back-step-btn mono">← Change service</button>
 
@@ -558,15 +368,16 @@
         </form>
       </div>
 
-      <!-- STEP 3: CONFIRMATION VIEW -->
+      <!-- STEP 3: CONFIRMATION -->
       <div id="serviceStep3" class="modal-success" style="display: none;">
         <div class="success-icon">✓</div>
         <h3>Request Received!</h3>
         <p>Thank you for reaching out. Your request for <strong id="confirmedServiceName"></strong> has been submitted to <strong>SpatialTech Zimbabwe</strong>, and you will receive a reply at <span id="confirmedEmail" class="mono"></span> shortly.</p>
-        <button type="button" id="doneServiceBtn" class="btn btn-primary btn-full">Back to Portfolio</button>
+        <button type="button" id="doneServiceBtn" class="btn btn-primary btn-full">Back to SpatialTech</button>
       </div>
     </div>
   </div>
-  <script src="js/main.js"></script>
+
+  <script src="js/main.js?v=1"></script>
 </body>
 </html>
