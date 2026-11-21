@@ -31,7 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
   }
-
+// Auto-open modal when arriving via ?service=... link
+    const urlParams = new URLSearchParams(window.location.search);
+    const requestedService = urlParams.get('service');
+    if (requestedService) {
+      openServiceModal(requestedService);
+    }
   // 4. Scroll Reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
